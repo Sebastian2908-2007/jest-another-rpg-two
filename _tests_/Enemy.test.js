@@ -5,9 +5,9 @@ const Potion = require('../lib/Potion');
 jest.mock('../lib/Potion.js');
 
 test('creates an enemy object', () => {
-    const enemy = new Enemy('goblin', 'sword');
+    const enemy = new Enemy('Ronnie', 'sword');
 
-    expect(enemy.name).toBe('goblin');
+    expect(enemy.name).toBe('Ronnie');
     expect(enemy.weapon).toBe('sword');
     expect(enemy.health).toEqual(expect.any(Number))
     expect(enemy.strength).toEqual(expect.any(Number));
@@ -24,7 +24,7 @@ test ('gets enemys health value', () => {
 
 
 test('checks if enemy is alive', () => {
-    const enemy =new Enemy('Ronnie', 'sword');
+    const enemy = new Enemy('Ronnie', 'sword');
 
     expect(enemy.isAlive()).toBeTruthy();
 
@@ -54,4 +54,11 @@ test('gets enemys attack value', () => {
 
   expect(enemy.getAttackValue()).toBeGreaterThanOrEqual(5);
   expect(enemy.getAttackValue()).toBeLessThanOrEqual(15);
+});
+
+test('gets enemies description', () => {
+    const enemy = new Enemy('Ronnie', 'sword');
+
+    expect(enemy.getDescription()).toEqual(expect.stringContaining('Ronnie'));
+    expect(enemy.getDescription()).toEqual(expect.stringContaining('sword')); 
 });

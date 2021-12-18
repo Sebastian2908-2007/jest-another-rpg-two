@@ -5,7 +5,7 @@
       
 
 # Jest another rpg two
- https://github.com/Sebastian2908-2007/Jest another rpg two
+ https://github.com/Sebastian2908-2007/jest-another-rpg-two
  ## Description
 
 This is a command line battle game using OOP pronciples

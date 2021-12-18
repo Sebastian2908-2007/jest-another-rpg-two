@@ -1,0 +1,25 @@
+{
+  "name": "jest-another-rpg-two",
+  "version": "1.0.0",
+  "description": "An rpg for cool battles against villans in the command line",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sebastian2908-2007/jest-another-rpg-two.git"
+  },
+  "author": "sebastian bowen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sebastian2908-2007/jest-another-rpg-two/issues"
+  },
+  "homepage": "https://github.com/Sebastian2908-2007/jest-another-rpg-two#readme",
+  "devDependencies": {
+    "jest": "^27.4.5"
+  },
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
+}

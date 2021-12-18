@@ -12,7 +12,7 @@ test('creates an enemy object', () => {
     expect(enemy.health).toEqual(expect.any(Number))
     expect(enemy.strength).toEqual(expect.any(Number));
     expect(enemy.agility).toEqual(expect.any(Number));
-    expect(enemy.Potion).toEqual(expect.any(Object));
+    expect(enemy.potion).toEqual(expect.any(Object));
 });
 
 
